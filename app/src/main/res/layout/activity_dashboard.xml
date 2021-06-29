@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    tools:context=".DashboardActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/linier1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="SELAMAT DATANG"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:fontFamily="casual"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textAkun"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:text="Di CARTER ANGKOT"
+                        android:textSize="20dp"
+                        android:fontFamily="casual"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tvTanggal"
+                        android:text="TANGGAL"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:fontFamily="casual"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tvUcapan"
+                        android:text="UCAPAN"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:fontFamily="casual"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/avatar"
+                        android:src="@drawable/avatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_above="@+id/copy"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/linier1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#FFF"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="15dp">
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/tvDriver"
+                        android:layout_gravity="center"
+                        android:text="SILAHKAN CARTER ANGKOTNYA"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:fontFamily="serif-monospace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linier3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:onClick="driver"
+                            android:layout_width="150dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="#FFF"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="15dp"
+                            tools:ignore="OnClick">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/car"
+                                    android:onClick="car"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/driver"
+                                    android:layout_width="100dp"
+                                    android:layout_height="150dp"
+                                    tools:ignore="OnClick" />
+
+                                <TextView
+                                    android:layout_gravity="bottom"
+                                    android:textSize="30dp"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold"
+                                    android:textColor="#000"
+                                    android:text="Lihat Driver"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:ignore="RtlCompat" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:onClick="out"
+                            android:layout_width="150dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="#FFF"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="15dp"
+                            tools:ignore="OnClick">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:onClick="out"
+                                    android:id="@+id/out"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/out"
+                                    android:layout_width="100dp"
+                                    android:layout_height="150dp"
+                                    tools:ignore="OnClick" />
+
+                                <TextView
+                                    android:layout_gravity="bottom"
+                                    android:textSize="30dp"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold"
+                                    android:textColor="#000"
+                                    android:text="Sign
+                                                Out"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:ignore="RtlCompat" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="feedback"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="100dp"
+                        app:cardBackgroundColor="#FFF"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="OnClick">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:onClick="feed"
+                                android:id="@+id/feedback"
+                                android:layout_gravity="center"
+                                android:src="@drawable/review"
+                                android:layout_width="100dp"
+                                android:layout_height="150dp"
+                                tools:ignore="OnClick" />
+
+                            <TextView
+                                android:id="@+id/tvFeed"
+                                android:onClick="tvFeed"
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center"
+                                android:textSize="30dp"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:textColor="#000"
+                                android:text="Feedback"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/copy"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Copyright @ Fernando Teguh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

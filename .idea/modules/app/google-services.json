@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "690793020553",
+    "firebase_url": "https://carterangkot-apps.firebaseio.com",
+    "project_id": "carterangkot-apps",
+    "storage_bucket": "carterangkot-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690793020553:android:b417362d63fc6a545f5a58",
+        "android_client_info": {
+          "package_name": "com.example.carterangkotapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690793020553-bmbt4ukq97rq4slbnq0sg0s5uc78jqv3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.carterangkotapps",
+            "certificate_hash": "1c03270f4d2aa7f994b0580d83fc1e5d25dbf8b9"
+          }
+        },
+        {
+          "client_id": "690793020553-446sn4mompvj28c0cc33jam9q5so1e3j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzCGt9uys08rZDgvhZGqtYzkqefpUntP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690793020553-446sn4mompvj28c0cc33jam9q5so1e3j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

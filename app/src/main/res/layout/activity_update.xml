@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#07FFE2"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp">
+
+            <TableRow
+                android:background="@color/colorPrimary2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Id Driver"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="        : "
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/textIdDriver"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Lengkap"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="        : "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/textNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. SIM"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="        : "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/textSim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Lengkap"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="        : "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/textAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Umur"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="        : "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/textUmur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nomor Telepon"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="        : "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/textNo_telepon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipe Mobil"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="        : "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/textTipeMobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jurusan Angkot"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="        : "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/textJurusan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plat No. Angkot"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="        : "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/textNo_polisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+            </TableRow>
+
+
+
+        </TableLayout>
+
+        <LinearLayout
+
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_marginRight="10dp"
+                android:id="@+id/call"
+                android:src="@drawable/ic_baseline_call_24"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <ImageButton
+                android:onClick="back"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/back"
+                android:src="@drawable/ic_baseline_home_24"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                tools:ignore="OnClick" />
+
+            <ImageButton
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/message"
+                android:src="@drawable/ic_baseline_message_24"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <ImageButton
+                android:onClick="back"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/whatsapp"
+                android:src="@drawable/wa"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/copy"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:text="Copyright @ Fernando Teguh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
